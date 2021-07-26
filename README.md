@@ -15,7 +15,7 @@ then copy the Client ID and Client Secret to the application that will be using 
 
 First, you'll need to require the package with Composer:
 ```sh
-composer require keepcloud/laravel-mautic-api
+composer require masmaleki/laravel-mautic-api
 ```
 Aftwards, run `composer update` from your command line.
 
@@ -24,7 +24,7 @@ Then, update `config/app.php` by adding an entry for the service provider.
 ```php
 'providers' => [
 	// ...
-	'Keepcloud\Mautic\MauticServiceProvider',
+	'masmaleki\Mautic\MauticServiceProvider',
 ],
 ```
 Then, register class alias by adding an entry in aliases section
