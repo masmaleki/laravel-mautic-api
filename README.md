@@ -1,4 +1,4 @@
-## Mautic API in Laravel/lumen 6.
+## Mautic API in Laravel 8.
 Free and Open Source Marketing Automation API
 
 ## Requirements
@@ -31,7 +31,7 @@ Then, register class alias by adding an entry in aliases section
 ```php
 'aliases' => [
     //.....
-    'Mautic' => 'Keepcloud\Mautic\Facades\Mautic',
+    'Mautic' => 'masmaleki\Mautic\Facades\Mautic',
 ],
 ```
 Finally, from the command line run `php artisan vendor:publish` to publish the default configuration file. 

@@ -1,8 +1,8 @@
 {
-    "name": "keepcloud/laravel-mautic-api",
-    "description": "Free and Open Source Marketing Automation API",
+    "name": "masmaleki/laravel-mautic-api",
+    "description": "Free and Open Source Marketing Automation API for laravel 8",
     "license": "MIT",
-    "keywords": ["mautic","laravel","lumen","keepcloud","api","sync","automation","email","marketing"],
+    "keywords": ["mautic","laravel","lumen","masmaleki","api","sync","automation","email","marketing"],
     "authors": [
         {
             "name": "Prince Ali Khan",
@@ -12,19 +12,24 @@
             "name": "Edison Costa",
             "email": "edison@keepcloud.io"
         }
+        ,
+          {
+            "name": "Mohammad Sadegh Maleki",
+            "email": "masmaleki@gmail.com"
+          }
     ],
     "minimum-stability": "stable",
     "require": {
-            "php": ">=7.2.5",
-            "illuminate/contracts": "5.5.*|5.6.*|5.7.*|5.8.*|6.*",
-            "illuminate/support": "5.5.*|5.6.*|5.7.*|5.8.*|6.*",
-            "mautic/api-library":"2.16.1",
+            "php": ">7.2.5",
+            "illuminate/contracts": "5.5.*|5.6.*|5.7.*|5.8.*|6.*|7.*|8.*",
+            "illuminate/support": "5.5.*|5.6.*|5.7.*|5.8.*|6.*|7.*|8.*",
+            "mautic/api-library":"3.0.0",
             "guzzlehttp/guzzle": "^6.3",
             "graham-campbell/manager": "^4.5"
         },
     "autoload": {
         "psr-4": {
-            "Keepcloud\\Mautic\\": "src/"
+            "masmaleki\\Mautic\\": "src/"
         }
     }    
 }
