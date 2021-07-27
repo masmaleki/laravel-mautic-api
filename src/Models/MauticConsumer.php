@@ -1,4 +1,6 @@
-<?php namespace Masmaleki\Mautic\Models;
+<?php
+
+namespace Masmaleki\Mautic\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

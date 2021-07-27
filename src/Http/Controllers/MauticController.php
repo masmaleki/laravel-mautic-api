@@ -1,27 +1,29 @@
-<?php namespace Masmaleki\Mautic\Http\Controllers;
+<?php
 
+namespace Masmaleki\Mautic\Http\Controllers;
+
+use Masmaleki\Mautic\Facades\Mautic;
 use App\Http\Controllers\Controller;
 use Masmaleki\Mautic\Models\MauticConsumer;
-use Masmaleki\Mautic\Facades\Mautic;
 
+class MauticController extends Controller
+{
 
-    class MauticController extends Controller
+    /**
+     * Setup Applicaion.
+     */
+    public function initiateApplication()
     {
+        $consumer = MauticConsumer::count();
 
-        /**
-         * Setup Applicaion.
-         */
-        public function initiateApplication()
+        if ($consumer == 0)
         {
-
-            $consumer = MauticConsumer::count();
-
-            if($consumer == 0){
-                Mautic::connection('main');
-            }else{
-                echo '<h1>Mautic App Already Register</h1>';
-            }
-
+            Mautic::connection('main');
+            echo '<h1>Mautic App Successfully Registered</h1>';
         }
-
+        else
+        {
+            echo '<h1>Mautic App Already Register</h1>';
+        }
     }
+}
