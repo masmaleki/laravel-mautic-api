@@ -1,8 +1,8 @@
-<?php namespace Keepcloud\Mautic\Factories;
+<?php namespace Masmaleki\Mautic\Factories;
 
 use Mautic\Auth\ApiAuth;
 use Mautic\Auth\OAuthClient;
-use Keepcloud\Mautic\Models\MauticConsumer;
+use Masmaleki\Mautic\Models\MauticConsumer;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 

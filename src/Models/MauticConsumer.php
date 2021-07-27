@@ -1,4 +1,4 @@
-<?php namespace Keepcloud\Mautic\Models;
+<?php namespace Masmaleki\Mautic\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

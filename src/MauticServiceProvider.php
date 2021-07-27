@@ -1,4 +1,4 @@
-<?php namespace Keepcloud\Mautic;
+<?php namespace Masmaleki\Mautic;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
@@ -44,7 +44,7 @@ class MauticServiceProvider extends ServiceProvider {
             return new Factories\MauticFactory();
         });
 
-        $app->alias('mautic.factory', 'Keepcloud\Mautic\Factories\MauticFactory');
+        $app->alias('mautic.factory', 'Masmaleki\Mautic\Factories\MauticFactory');
     }
 
     /**
@@ -63,7 +63,7 @@ class MauticServiceProvider extends ServiceProvider {
             return new Mautic($config, $factory);
         });
 
-        $app->alias('mautic', 'Keepcloud\Mautic\Mautic');
+        $app->alias('mautic', 'Masmaleki\Mautic\Mautic');
     }
 
     /**
@@ -72,7 +72,7 @@ class MauticServiceProvider extends ServiceProvider {
      * @return routes
      */
     protected function registerRoutes(Application $app) {
-        $app['router']->group(['namespace' => 'Keepcloud\Mautic\Http\Controllers', "prefix" => "mautic"], function () {
+        $app['router']->group(['namespace' => 'Masmaleki\Mautic\Http\Controllers', "prefix" => "mautic"], function () {
             require __DIR__.'/Http/routes.php';
         });
     }

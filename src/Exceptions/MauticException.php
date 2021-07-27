@@ -1,4 +1,4 @@
-<?php namespace Keepcloud\Mautic\Exceptions;
+<?php namespace Masmaleki\Mautic\Exceptions;
 /**
  * Invalid Request Exception
  *

@@ -1,4 +1,4 @@
-<?php namespace Keepcloud\Mautic\Facades;
+<?php namespace Masmaleki\Mautic\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

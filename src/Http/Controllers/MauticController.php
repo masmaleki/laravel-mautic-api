@@ -1,8 +1,8 @@
-<?php namespace Keepcloud\Mautic\Http\Controllers;
+<?php namespace Masmaleki\Mautic\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Keepcloud\Mautic\Models\MauticConsumer;
-use Keepcloud\Mautic\Facades\Mautic;
+use Masmaleki\Mautic\Models\MauticConsumer;
+use Masmaleki\Mautic\Facades\Mautic;
 
 
     class MauticController extends Controller

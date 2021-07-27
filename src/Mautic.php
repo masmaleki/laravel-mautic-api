@@ -1,10 +1,10 @@
-<?php namespace Keepcloud\Mautic;
+<?php namespace Masmaleki\Mautic;
 
-use Keepcloud\Mautic\Factories\MauticFactory;
+use Masmaleki\Mautic\Factories\MauticFactory;
 use GrahamCampbell\Manager\AbstractManager;
 use Illuminate\Contracts\Config\Repository;
 use Mautic\Auth\OAuthClient;
-use Keepcloud\Mautic\Models\MauticConsumer;
+use Masmaleki\Mautic\Models\MauticConsumer;
 
 class Mautic extends AbstractManager
 {
