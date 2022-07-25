@@ -18,7 +18,7 @@ class MauticController extends Controller
 
         if ($consumer == 0)
         {
-            Mautic::createConnection('main');
+            Mautic::connection('main');
             echo '<h1>Mautic App Successfully Registered</h1>';
         }
         else
