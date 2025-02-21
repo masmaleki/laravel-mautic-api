@@ -40,7 +40,7 @@ class Mautic extends AbstractManager
      *
      * @return mixed
      */
-    protected function createConnection(array $config)
+    protected function createConnection(array $config): object
     {
         return $this->factory->make($config);
     }
@@ -50,7 +50,7 @@ class Mautic extends AbstractManager
      *
      * @return string
      */
-    protected function getConfigName()
+    protected function getConfigName(): string
     {
         return 'mautic';
     }
